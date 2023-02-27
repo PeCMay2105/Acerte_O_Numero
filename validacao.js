@@ -5,6 +5,7 @@ const body = document.getElementById('corpo')
 function verificaSeNum(chute){
     const numero = +chute
     if(NotNumber(numero)){
+        gameOver(chute)
         div.innerHTML = `<div class = "retorno"> ERRO </div>
         <span class = "box"> fale um número </span>`
         console.log('palavra inválida: fale um número')
@@ -70,3 +71,15 @@ function numForaLim(numero){
     return numero > maiorValor || numero < menorValor
 }
 
+function gameOver(comando){
+    if(comando == "game over"){
+        body.innerHTML = `<h1 class='titulo'> fim de jogo </h1>
+        <button class = "botao" id= "novoJogo">Jogar novamente</button>`
+        body.addEventListener('click', (event) => {
+            if(event.target.id == 'novoJogo')
+            { window.location.reload()}
+         })
+        return
+    }
+    else{}
+}
