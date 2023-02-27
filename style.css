@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto+Condensed:wght@300&display=swap');
+:root {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #537FE7;
+    --primary-color: #E9F8F9
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    color:var(--primary-color);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.titulo{
+    font-size: 8vh;
+    font-style: italic;
+    text-decoration: underline;
+    margin-bottom: 10vh;
+}
+.dica{
+    font-size: 5vh;
+    text-decoration:wavy;
+    margin-bottom: 10vh;
+}
+
+#chute{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap ;
+    font-size: 4vh ;
+}
+
+.retorno{
+    align-self: center;
+}
+
+.box{
+    border:solid #E9F8F9;
+    padding: 8px;
+    border-radius: 8px;
+    align-self: center;
+    font-size: 8vh;
+    margin: 5vh;
+}
+
+.respostaCerta{
+    background-color: #00FA9A;
+}
+
+.botao{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    padding: 10px 10px;
+    border: 0;
+    border-radius:10px;
+    background-color: var(--primary-color);
+}
